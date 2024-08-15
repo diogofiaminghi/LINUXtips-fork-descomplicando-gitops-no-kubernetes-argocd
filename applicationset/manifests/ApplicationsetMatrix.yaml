@@ -10,12 +10,12 @@ spec:
     - matrix:
         generators:
           - git:
-              repoURL: https://github.com/bernardolsp/descomplicando-gitops-no-kubernetes-argocd.git
+              repoURL: https://github.com/diogofiaminghi/LINUXtips-fork-descomplicando-gitops-no-kubernetes-argocd.git
               revision: feat/day3
               directories:
               - path: applicationset/apps/*/helm
           - git: 
-              repoURL: https://github.com/bernardolsp/descomplicando-gitops-no-kubernetes-argocd.git
+              repoURL: https://github.com/diogofiaminghi/LINUXtips-fork-descomplicando-gitops-no-kubernetes-argocd.git
               revision: feat/day3
               pathParamPrefix: cfg
               files:
@@ -26,7 +26,7 @@ spec:
     spec:
       project: "default"
       source:
-        repoURL: https://github.com/bernardolsp/descomplicando-gitops-no-kubernetes-argocd.git
+        repoURL: https://github.com/diogofiaminghi/LINUXtips-fork-descomplicando-gitops-no-kubernetes-argocd.git
         targetRevision: feat/day3
         path: '{{.path.path}}'
       destination:

@@ -17,7 +17,7 @@ configs:
       password: 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
       username: token
     infra-repo:
-      url: https://github.com/bernardolsp/descomplicando-gitops-no-kubernetes-argocd
+      url: https://github.com/diogofiaminghi/LINUXtips-fork-descomplicando-gitops-no-kubernetes-argocd.git
       name: infra
       password: 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
       username: token
