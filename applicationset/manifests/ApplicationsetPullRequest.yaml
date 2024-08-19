@@ -9,8 +9,8 @@ spec:
   generators:
   - pullRequest:
       github: 
-        owner: bernardolsp
-        repo: descomplicando-gitops-no-kubernetes-argocd
+        owner: diogofiaminghi
+        repo: LINUXtips-fork-descomplicando-gitops-no-kubernetes-argocd
         tokenRef:
           secretName: github-token
           key: token
