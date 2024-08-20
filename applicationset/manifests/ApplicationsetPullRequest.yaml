@@ -7,19 +7,19 @@ spec:
   generators:
   - pullRequest:
       github: 
-        owner: bernardolsp
-        repo: descomplicando-gitops-no-kubernetes-argocd
+        owner: diogofiaminghi
+        repo: LINUXtips-fork-descomplicando-gitops-no-kubernetes-argocd
         tokenRef:
           secretName: github-token
           key: token
       requeueAfterSeconds: 60
   template:
     metadata:
-      name: "stack-apps-{{branch_slug}}-{{number}}"
+      name: 'stack-apps-{{branch_slug}}-{{number}}'
     spec:
       project: "default"
       source:
-        repoURL: https://github.com/bernardolsp/descomplicando-gitops-no-kubernetes-argocd.git
+        repoURL: https://github.com/diogofiaminghi/LINUXtips-fork-descomplicando-gitops-no-kubernetes-argocd
         targetRevision: '{{head_sha}}'
         path: app-of-apps/
         helm:
