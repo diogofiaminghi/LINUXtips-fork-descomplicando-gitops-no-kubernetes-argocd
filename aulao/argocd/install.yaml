@@ -4,7 +4,7 @@ server:
   ingress:
     enabled: true
     ingressClassName: nginx
-    hostname: argocd.bernardolopes.com
+    hostname: argocd.diogofiaminghi.com.br
     path: /
 
 configs:
@@ -29,5 +29,5 @@ applicationSet:
   ingress:
     enabled: true
     ingressClassName: nginx
-    hostname: applicationset.bernardolopes.com
+    hostname: applicationset.diogofiaminghi.com.br
     path: /
