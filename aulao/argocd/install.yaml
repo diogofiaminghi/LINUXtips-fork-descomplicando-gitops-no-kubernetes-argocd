@@ -4,7 +4,7 @@ server:
   ingress:
     enabled: true
     ingressClassName: nginx
-    hostname: argocd.bernardolopes.com
+    hostname: argocd.diogofiaminghi.com.br
     path: /
   metrics:
     enabled: true
@@ -72,17 +72,17 @@ configs:
     dexserver.disable.tls: true
     server.dex.server.strict.tls: false
   cm:
-    url: http://argocd.bernardolopes.com
+    url: http://argocd.diogofiaminghi.com.br
     dex.config: |
       connectors:
       - type: github
         id: github
         name: GitHub
         config:
-          clientID: eeb0d5439fa3d775eca7
-          clientSecret: c0cd97e254b5ca84e7c68c67763b94852c628610
+          clientID: Ov23lipyS4mFDeaNqAgs
+          clientSecret: 150f3ce2119e5e3639eb4a8e068bd046f1354ea6
           orgs: 
-          - name: Treinamento-ArgoCD
+          - name: Treinamento-AgoCD
 
   rbac:
     policy.default: role:readonly
@@ -102,5 +102,5 @@ applicationSet:
   ingress:
     enabled: true
     ingressClassName: nginx
-    hostname: applicationset.bernardolopes.com
+    hostname: applicationset.diogofiaminghi.com.br
     path: /
