@@ -92,7 +92,7 @@ configs:
       p, role:org-admin, repositories, *, *, allow
       p, role:org-admin, logs, get, *, allow
       p, role:org-admin, exec, create, */*, allow
-      g, Treinamento-ArgoCD:DevOps, role:org-admin
+      g, Treinamento-AgoCD:DevOps, role:org-admin
     scopes: '[groups]'
 
 applicationSet:
